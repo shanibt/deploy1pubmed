@@ -1,0 +1,24 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PubMed Fetcher</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <form id="pubMedForm" action="action_page.php">
+        <h1>PubMed Fetcher</h1>
+        First Name: <input type="text" name="fname" required pattern="^\S+$" title="One word only"> <br>
+        Last Name: <input type="text" name="lname" required pattern="^\S+$" title="One word only"> <br> 
+        Filter Terms (ex. irvine,2021 OR n/a) (no spaces): <input type="text" name="fterm" required pattern="^\S+$" title="No Spaces OR N/A"> <br> 
+        Full Citation <input type="radio" name="fullCit"> <br> 
+        Journal Images <input type="radio" name="image"> <br> 
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+    
+
+    <script src="script.js"> </script> 
+</body>
+</html>
